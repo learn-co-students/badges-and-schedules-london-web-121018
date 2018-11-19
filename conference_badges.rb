@@ -17,6 +17,7 @@ def assign_rooms (arrayofspeakers)
 end 
 
 def printer (attendees)
-  batch_badge_creator(attendees).each{|x| puts x};
-  assign_rooms(attendees).each{|x| puts x}
+  printbadgemessage = batch_badge_creator(attendees).each{|x| puts x};
+  printassignmessage = assign_rooms(attendees).each{|x| puts x};
+  nil
 end 
